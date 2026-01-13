@@ -36,7 +36,7 @@ export default class EditExercise extends Component {
         console.log(error);
       })
 
-    axios.get('https://watch-dev.vercel.app/users/')
+    axios.get('https://watch-dev.vercel.app/users')
       .then(response => {
         if (response.data.length > 0) {
           this.setState({
