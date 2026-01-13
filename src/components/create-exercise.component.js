@@ -74,7 +74,7 @@ export default class CreateExercise extends Component {
 
     console.log(exercise);
 
-    axios.post('https://watch-dev.vercel.app'+'/exercises/add', exercise)
+    axios.post('https://watch-dev.vercel.app/exercises/add', exercise)
       .then(res => console.log(res.data));
 
     window.location = '/';
